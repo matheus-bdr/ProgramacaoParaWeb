@@ -1,0 +1,69 @@
+Usaremos um JS diferente do que vemos no navegador
+------------------------------------------------------------------------------
+
+INTERNET: se associa com rede, para poder trocar informações.
+BROWSER: intermedio de humano e internet 
+
+FORMATO CLIENTE SERVIDOR: principal dorma de desenvolvimento 
+|-> requisição / resposta 
+
+PROTOCOLO DE REQUISIÇÃO: toda vez que é pedido é aberto um formulário de requisição 
+Dynamic resource : objeto de estudo 
+
+--------------------------------------------------------------------------------
+  JAVASCRIPT: 
+-linguagem dinamica
+-tipagem dinamica fraca
+-multiparadigma
+	!
+	v
+   NODE.JS:
+-interpretador 
+-processo assincrono: pode ter varias demandas ao mesmo tempo 
+-orientada por eventos(requisição)
+
+---------------------------------------------------------------------------------
+
+const n = 1;
+var n = 2; 
+let n = 3; 
+
+var ~= let
+
+LET: não permite redeclarar uma variavel MAS pode ser atualizado o valor. 
+
+---------------------------------------------------------------------------------
+
+-String: letras e caracteres(aspas simples ou duplas)
+-Number: int, float e double
+-Boolean: true or false
+-Null: nula
+-undefined
+---------------------------------------------------------------------------------
+console.log() = print()
+true and false != True and False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
