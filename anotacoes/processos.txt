@@ -1,0 +1,21 @@
+npm init 
+npm install express@4.18.2
+--------------------------
+const express = require('express')
+const app = express()
+
+app.get('/', function(req,res){
+    res.send("olá mundo!")
+})
+
+//acesando parametros por meio da url
+app.get('/somar/:n1/:n2', function(req,res){
+    res.send("N1 = "+ req.params.n1 + " N2 = "+ req.params.n2)
+})
+
+app.listen(8000, ()=> {
+    console.log("app rodando na porta 8000")
+})
+
+//localhost:8000
+-------------------------------------------------------

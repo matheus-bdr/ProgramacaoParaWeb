@@ -1,0 +1,35 @@
+module.exports  = {
+    somar: function(n1,n2){
+        return n1+n2;
+    },
+    multiplicar: function(n1,n2){
+        return n1 * n2;
+    },
+    subtrair: function(n1,n2){
+        return n1 - n2;
+    },
+    dividir: function(n1,n2){
+        return n1 / n2;
+    }
+}
+------------------------------------------------------------------------------------
+//this. acessa uma propriedade de um obj
+
+function getPalavrasDistintas(texto){
+    texto_separado = texto.split(" ")
+    texto_separado = new Set(texto_separado)
+    return Array.from(texto_separado)
+}
+module.exports= { 
+    getPalavrasDistintas
+}
+console.log(getPalavrasDistintas("MOP MOPa MOP"));
+
+------------------------------------------------------------------------
+
+
+const calculadora = require('./calculadora.js')
+const txt = require('./sada.js')
+
+console.log("A soma de 10 e 5 é: ",calculadora.somar(10,5));
+console.log("palavras distintas: ",txt.getPalavrasDistintas("sdad asdad assadasdsa"));
