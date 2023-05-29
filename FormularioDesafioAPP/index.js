@@ -20,9 +20,10 @@ app.get('/', function (req, res) {
 app.post('/formulariofeito', function (req, res) {
     let dados_form = {
         nome: req.body.name,
-        cpf: req.body.mail,
+        email: req.body.gmail,
         telefone: req.body.tel,
         msg: req.body.mensagem
     }
+    console.log(dados_form)
     res.render('apresentaDados.html', {dados_form})
 })
