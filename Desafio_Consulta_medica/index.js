@@ -47,7 +47,7 @@ function formatarCEP(cep)
 }
 function validarTelefone(telefone)
 {
-	var telRegex = '^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$'; // Pode usar ? no lugar do *
+	var telRegex = /(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})/g; 
 
 	if (telefone.match(telRegex)) {
         return true; 
@@ -83,6 +83,9 @@ app.post('/marcar_consulta', function (req, res) {
     }
     if(!validarTelefone(marcar_consulta.telefone)){
         erros.push({campo: "Telefone", msg: "inválido"})
+    }
+    if(erros.length > 0){
+        res.render('index.html', {erros, marcar_consulta})
     }else{
         res.render('apresenta_dados.html', {marcar_consulta})
     }
