@@ -84,6 +84,30 @@ app.post('/marcar_consulta', function (req, res) {
     if(!validarTelefone(marcar_consulta.telefone)){
         erros.push({campo: "Telefone", msg: "inválido"})
     }
+    if(marcar_consulta.dataNascimento == ""){
+        erros.push({campo: "Data", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.senha == ""){
+        erros.push({campo: "Senha", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.especialidade == ""){
+        erros.push({campo: "Data", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.datetime == ""){
+        erros.push({campo: "Data", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.allergic == ""){
+        erros.push({campo: "Allergic", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.infoField == ""){
+        erros.push({campo: "Info Field", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.nome == ""){
+        erros.push({campo: "Nome", msg: "Não pode ser vazio"})
+    }
+    if(marcar_consulta.estado == ""){
+        erros.push({campo: "Estado", msg: "Não pode ser vazio"})
+    }
     if(erros.length > 0){
         res.render('index.html', {erros, marcar_consulta})
     }else{
