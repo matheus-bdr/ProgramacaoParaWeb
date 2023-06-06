@@ -114,3 +114,39 @@ app.post('/marcar_consulta', function (req, res) {
         res.render('apresenta_dados.html', {marcar_consulta})
     }
 })
+/* console.log(marcar_consulta)
+res.render('apresenta_dados.html', {marcar_consulta}) */
+
+/*  */
+/* 
+app.post('/mostrar_dados', function (req, res) {
+    let dados_formulario = {
+        nome: req.body.nome,
+        email: req.body.email,
+        fone : req.body.fone,
+        cpf: req.body.cpf,
+        text: req.body.text
+
+    }
+
+    let erros = []
+
+    if(dados_formulario.nome == ""){
+        erros.push({campo: "Nome", msg: "Não pode ser vazio"})
+    }
+    
+    if(dados_formulario.email == ""){
+        erros.push({campo: "e-mail", msg: "Não pode ser vazio"})
+    }
+
+    if(!validarCPF(dados_formulario.cpf)){
+        erros.push({campo: "CPF", msg: "inválido"})
+    }
+    
+    if(erros.length > 0){
+        res.render('index.html', {erros, dados_formulario})
+    }
+    else{
+        res.render('dados.html', {dados_formulario})
+    } */
+    
