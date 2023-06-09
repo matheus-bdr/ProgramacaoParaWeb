@@ -47,6 +47,10 @@ function editarPessoa(req, res) {
         nome: req.body.nome,
         sobrenome: req.body.sobrenome,
         cpf: req.body.cpf,
+        email: req.body.email,
+        telefone: req.body.telefone,
+        altura: req.body.altura,
+        peso: req.body.peso
     }
     Pessoa.update(
       pessoa,

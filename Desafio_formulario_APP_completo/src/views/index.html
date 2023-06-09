@@ -9,15 +9,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-
-    <div class="container">
-        <h1>Template Node.js MVC webapp</h1>
-    </div>
-    <a href="../views/pessoa/cadastrar.html">Cadastrar</a>
-    <a href="../views/pessoa/editar.html">Editar</a>
-    <a href="../views/pessoa/listar.html">listar</a>
-
+<body class="bg-dark text-white">
+    <header>
+        <div class="container p-5">
+            <h1 class="text-center">Template Node.js MVC webapp</h1>
+        </div>
+    </header>
+    <main>
+        <div class="row p-5 text-center">
+            <div class="col-6">
+                <h2>Cadastre-se agora mesmo</h2>
+                <h3>Clique <a href="/pessoa/cadastrar"> Aqui</a></h3>
+            </div>
+            <div class="col-6">
+                <h2>
+                    Veja os usuários cadastros
+                </h2>
+                <h3>Clique <strong><a href="/pessoa/listar"> aqui</a> </strong></h3>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

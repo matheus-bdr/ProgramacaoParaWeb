@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
             "type": "chrome",
             "request": "launch",
@@ -19,7 +20,14 @@
             "name": "Executar Script: test",
             "request": "launch",
             "command": "npm run test",
-            "cwd": "${workspaceFolder}\\TEMPLATE_VAZIO"
+            "cwd": "${workspaceFolder}\\Desafio_formulario_APP_completo"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Executar Script: test",
+            "request": "launch",
+            "command": "npm run test",
+            "cwd": "${workspaceFolder}\\Desafio_formulario_APP_completo"
         }
     ]
 }
