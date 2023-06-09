@@ -1,7 +1,7 @@
 {
   "name": "app_template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node MVC WebApp é um aplicativo modelo usando [Node.js](https://nodejs.org/en) e padrão arquitetural [MVC](https://pt.wikipedia.org/wiki/MVC)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
